@@ -1,0 +1,19 @@
+def bubble_sort(arr)
+  pass = 0
+  check = true
+    while check
+      for index in 0...(arr.size-1)
+          if arr[index] > arr[index+1]
+             temp = arr[index]
+             arr[index] = arr[index+1]
+             arr[index+1] = temp               
+          end 
+      end 
+      pass += 1
+      if pass == arr.size - 1
+        check = false
+      end
+    end   
+    return arr
+end
+p bubble_sort([-4,3,78,2,0,10,2,6])
